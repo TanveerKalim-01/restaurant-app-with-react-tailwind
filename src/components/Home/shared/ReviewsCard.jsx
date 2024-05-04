@@ -1,10 +1,11 @@
 import React from 'react'
 import { FaStar } from "react-icons/fa6";
 import { FaCircleCheck } from "react-icons/fa6";
+import { Link } from 'react-router-dom';
 
 function ReviewsCard() {
     return (
-        <div className='bg-[#F5EFF5] text-center relative basis-[100%] md:basis-1/2  lg:basis-1/3 shrink-0 items-start h-fit'>
+        <Link className='bg-[#F5EFF5] text-center relative basis-[100%] md:basis-1/2  lg:basis-1/3 shrink-0 items-start h-fit shadow  hover:shadow-2xl'>
             <div className='py-6 px-4 '>
                 <h1 className='text-4xl font-semibold'>&#8220; Best keto <br /> Pizza in the <br /> city &#8221;</h1>
 
@@ -23,7 +24,7 @@ function ReviewsCard() {
                 <p className="mt-2 text-xs">21/04/2023</p>
             </div>
 
-        </div>
+        </Link>
     )
 }
 

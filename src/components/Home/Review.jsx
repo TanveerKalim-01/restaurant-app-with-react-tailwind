@@ -4,6 +4,7 @@ import ReviewsCard from "./shared/ReviewsCard";
 import { FaAngleLeft } from "react-icons/fa6";
 import { FaAngleRight } from "react-icons/fa6";
 import { useRef } from "react";
+import { Link } from "react-router-dom";
 
 function Review() {
     const scrollRef = useRef(null);
@@ -28,7 +29,7 @@ function Review() {
 
                 <div className='flex gap-2 '>
 
-                    <div className='bg-[#F5EFF5] basis-[100%] md:basis-1/2 lg:basis-1/3 shrink-0 h-fit text-center'>
+                    <Link className='bg-[#F5EFF5] basis-[100%] md:basis-1/2 lg:basis-1/3 shrink-0 h-fit text-center shadow hover:shadow-2xl mb-4'>
                         <div className="relative">
                         <img src="assests/HomeImg/reviewsImg/1DQjqNfAx.jpg" alt="/" className="w-full" />
                         <h1 className='w-fit text-xl border border-white rounded-full p-2 bg-[#E6E6E6] absolute top-[86%] left-[44%]' >
@@ -48,7 +49,7 @@ function Review() {
                             <FaStar />
                             <FaStar />
                         </div>
-                    </div>
+                    </Link>
 
                     <ReviewsCard />
                     <ReviewsCard />
@@ -69,7 +70,7 @@ function Review() {
             </div>
             <div className="flex justify-between mt-16 w-5/6 mx-auto">
                 <FaAngleLeft onClick={scrollLeft} className="text-3xl" />
-                <button className="border border-black px-2 hover:bg-black hover:text-white">Show more reviews</button>
+                <button className="border border-black px-2 transition-all duration-200 hover:bg-black hover:text-white">Show more reviews</button>
                 <FaAngleRight onClick={scrollRight} className="text-3xl" />
             </div>
         </>
