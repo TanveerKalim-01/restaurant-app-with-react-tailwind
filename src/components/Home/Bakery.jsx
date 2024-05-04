@@ -16,6 +16,7 @@ function Bakery() {
                     <img className='w-full rounded-t-xl md:rounded-r-xl md:aspect-square' src="../assests/HomeImg/BakeryImg/BakeryImg.webp" alt="" />
                 </div>
             </div>
+            
             <div className="w-2/3 mx-auto pt-16 ">
                 <h1 className='text-4xl font-semibold mb-6'>When yummy meets healthy</h1>
                 <p className='text-lg mt-4'>
